@@ -1,0 +1,110 @@
+*{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*body{
+    background: linear-gradient(to left,
+    rgba(255, 200, 200, 0.75) 50%,rgb(219, 219, 219) 50% 100%);
+}*/
+.ui{
+    width: 60em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0px 10px 50px rgb(0 0 0 / 30%);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    height: 38em;
+}
+.dice{
+    position: absolute;
+    height: 11em;
+    left: 44%;
+    top: 43%;
+    box-shadow: 0px 8px 20px rgb(200 192 192);
+}
+.newgame{
+    display: flex;
+    justify-content: center;
+}
+.player{
+    font-size: 3em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100;
+    position: relative;
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+.score{
+    color: white;
+    font-weight: 200;
+} 
+.active{
+    background-color: rgb(199, 191, 191);
+}
+.active .player{
+    font-weight: 400;
+}
+.active .player::after{
+    content: "\2022";
+    font-size: 47px;
+    position: absolute;
+    color: #EB4D4D;
+    top: -7px;
+    right: 10px;
+}
+.current{
+    background-color: red;
+    text-align: center;
+    height: 5em;
+    width: 35%;
+    padding: 12px;
+    margin: 0 auto;
+}
+.currentLabel{
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    font-size: 13px;
+}
+
+.diceTot{
+    font-size: 5em;
+    text-align: center;
+    color: indianred;
+    font-weight: 200;
+    margin-bottom: 2em;
+}
+.button{
+    position: absolute;
+    background: none;
+    border: none;
+    text-transform: UPPERCASE;
+    left: 46%;
+}
+.new{
+    top: 25%;
+}
+.roll{
+    top: 70%;
+}
+.hold{
+    top: 75%;
+}
+.button:hover{
+    background-color: rgb(248, 73, 73);
+}
+.img{
+    width: 27px;
+    margin-right: 1em;
+}
+.player-right,
+.player-left{
+    width: 50%;
+    float: left;
+    height: 38em;
+}
