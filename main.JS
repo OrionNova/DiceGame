@@ -1,7 +1,9 @@
-//cree une function init(){ pour le bouton new game
-init()
-var currentDiceValue = 0
-var currentPlayer = 0
+player1 = prompt('Name of player 1 : ');
+document.getElementById("player1").innerHTML=player1;
+player2 = prompt('Name of player 2 : ');
+document.getElementById("player2").innerHTML=player2;
+document.querySelector('.dice').style.display = 'none';
+
 
 var global = [
     { 
@@ -20,7 +22,8 @@ var global = [
     }
 ]
 
-
+var currentDiceValue = 0
+var currentPlayer = 0
 
 
 
@@ -53,8 +56,17 @@ function hold(){
     global[currentPlayer].global_point = global[currentPlayer].round_point + global[currentPlayer].global_point;
     writeInDom(global[currentPlayer].element_global_id, global[currentPlayer].global_point);
 
-    if(global[currentPlayer].global_point >= 10) {
+    if(global[currentPlayer].global_point >= 50) {
         //TODO
+        //document.querySelector('.player-' + currentPlayer).textContent='Winner!'
+        const modalContainer = document.querySelector(".modal-container");
+        const modalTriggers = document.querySelectorAll(".modal-trigger")
+
+        modalTriggers.forEach(trigger => trigger.addEventListener("click", toggleModal))
+
+        function toggleModal(){
+        modalContainer.classList.toggle("activeModal")
+        }
       return;
     }
     //alert ("changement de joueur")
@@ -82,16 +94,5 @@ function switchPlayer(){
 }
 
 function init(){
-
-
-    document.getElementById('GP1').textContent = '0';
-    document.getElementById('RP1').textContent = '0';
-    document.getElementById('GP2').textContent = '0';
-    document.getElementById('RP2').textContent = '0';
-    
-    player1 = prompt('Name of player 1 : ');
-    document.getElementById("player1").innerHTML=player1;
-    player2 = prompt('Name of player 2 : ');
-    document.getElementById("player2").innerHTML=player2;
-    document.querySelector('.dice').style.display = 'none';
+location.reload();
 }

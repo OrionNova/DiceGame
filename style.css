@@ -21,11 +21,12 @@
     height: 38em;
 }
 .dice{
+    display: block;
     position: absolute;
-    height: 11em;
-    left: 44%;
-    top: 43%;
-    box-shadow: 0px 8px 20px rgb(200 192 192);
+    left: 41%;
+    top: 52%;
+    height: 10em;
+    box-shadow: 0px 8px 20px rgb(200 192 192)
 }
 .newgame{
     display: flex;
@@ -33,7 +34,7 @@
 }
 .player{
     font-size: 3em;
-    text-align: center;
+    text-align: center; 
     text-transform: uppercase;
     font-weight: 100;
     position: relative;
@@ -84,16 +85,17 @@
     background: none;
     border: none;
     text-transform: UPPERCASE;
-    left: 46%;
+    left: 42%;
 }
 .new{
-    top: 25%;
+    top: 32%;
 }
 .roll{
-    top: 70%;
+    top: 83%;
 }
 .hold{
-    top: 75%;
+    top: 74%;
+    left: 40%;
 }
 .button:hover{
     background-color: rgb(248, 73, 73);
@@ -107,4 +109,11 @@
     width: 50%;
     float: left;
     height: 38em;
+}
+
+.diceGame.activeModal{
+    visibility: visible;
+}
+.diceGame.activeModal .button{
+    position: relative;
 }
