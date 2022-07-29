@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body> 
 
@@ -16,6 +16,10 @@
       <div class="modal">
         <button class="close-modal">X</button>
         <h1>Contenue</h1>
+        <div>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_touohxv0.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"    autoplay></lottie-player>
+        </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis fugiat placeat necessitatibus, 
           nulla dolorem alias nesciunt eligendi exercitationem veritatis minima iure debitis ipsa. Ad quas 
           repellat sunt eaque! Natus, amet!</p>
@@ -42,24 +46,23 @@
             </div>
 
         </div>
-        <img src="dice-5.png" alt="Dice" id="roll" class="dice">
+        <img src="assets/img/dice-5.png" alt="Dice" id="roll" class="dice">
         <button type="button" class="button new" onclick="init()">
-        <img class="img" src="https://www.pinclipart.com/picdir/big/551-5518633_red-plus-sign-transparent-png-clipart-free-download.png">
+        <img class="img" src="assets/img/new.png">
         New Game
         </button> 
         <button class="button roll" type="button"  onclick="rollDice()">
-        <img class="img" src="https://www.pinclipart.com/picdir/big/524-5243201_the-ocean-3-curved-arrow-circle-clipart.png">
+        <img class="img" src="assets/img/roll.png">
         Roll dice
         </button>
-        <button class="button hold modal-btn modal-trigger" type="button" onclick="hold()">
-        <img class="img" src="https://www.pinclipart.com/picdir/big/169-1692515_download-download-now-red-download-icon-png-clipart.png">
+        <button class="button hold" type="button" onclick="hold()">
+        <img class="img" src="assets/img/hold.png">
         Hold
         </button>
       </div>  
     </div>
 
-
-<script src="main.JS"></script>
+<script src="assets/js/main.js"></script>
 <noscript>
     <p>Merci d'activer JavaScript afin de pouvoir bénéficier de toutes 
 	les fonctionnalités de notre site.</p>
