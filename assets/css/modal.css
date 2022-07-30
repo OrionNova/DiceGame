@@ -83,3 +83,19 @@ color: #fff;
     line-height: 1.4;
     margin-bottom: 16px;
 }
+.finish{
+    display: flex;
+    justify-content: center;
+}
+.revenge{
+    border: none;
+    font-size: 2em;
+    margin-left: 33%;
+    background: #EB4D4D;
+    font-weight: bold;
+}
+.congrat{
+    font-weight: bold;
+    font-size: 3em;
+    color: #EB4D4D;
+}

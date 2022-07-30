@@ -88,14 +88,20 @@
     left: 42%;
 }
 .new{
-    top: 32%;
+    top: 13%;
+    display: flex;
+    align-items: center;
 }
 .roll{
-    top: 83%;
+    top: 81%;
+    display: flex;
+    align-items: center;
 }
 .hold{
-    top: 74%;
-    left: 40%;
+    top: 92%;
+    left: 43%;
+    display: flex;
+    align-items: center;
 }
 .button:hover{
     background-color: rgb(248, 73, 73);

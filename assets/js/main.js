@@ -6,7 +6,6 @@ document.querySelector('.dice').style.display = 'none';
 
 const modalContainer = document.querySelector(".modal-container");
 
-
 var global = [
     { 
         name:"player1",
@@ -52,10 +51,11 @@ function roundPoint(){
         switchPlayer();
     }
 }
-
+//modal pop
 function toggleModal(){
     modalContainer.classList.toggle("activeModal")
 }
+//check player win 
 function updatePoint(){
 
         global[currentPlayer].global_point = global[currentPlayer].round_point + global[currentPlayer].global_point;
@@ -63,6 +63,8 @@ function updatePoint(){
 
         if(global[currentPlayer].global_point >= 50) {
             toggleModal();
+            playerWinner = " " + global[currentPlayer].name + " ";
+            document.getElementById("playerWinner").innerHTML=playerWinner
         }
 } 
 //hold point and switch play
@@ -91,6 +93,8 @@ function switchPlayer(){
    currentPlayer = (currentPlayer == 0 ) ? 1 : 0;
 
 }
+playerWinner = " "+currentPlayer + " ";
+document.getElementById("playerWinner").innerHTML=playerWinner
 
 function init(){
 location.reload();
